@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
 using System.Web.Http;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -13,9 +14,10 @@ namespace TestProject.Controllers
 
         public MeController()
         {
+            Console.WriteLine("Initialization");
         }
 
-        public MeController(ApplicationUserManager userManager)
+        public MeController(ApplicationUserManager userManager) : this()
         {
             UserManager = userManager;
         }
