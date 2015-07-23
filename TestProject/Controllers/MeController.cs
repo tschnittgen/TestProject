@@ -20,6 +20,7 @@ namespace TestProject.Controllers
         public MeController(ApplicationUserManager userManager) : this()
         {
             UserManager = userManager;
+            Console.WriteLine("One more change");
         }
 
         public ApplicationUserManager UserManager
