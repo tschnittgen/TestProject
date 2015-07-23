@@ -10,6 +10,9 @@ namespace TestProject.Controllers
     [Authorize]
     public class MeController : ApiController
     {
+        /// <summary>
+        /// Local instance of ApplicationUserManager
+        /// </summary>
         private ApplicationUserManager _userManager;
 
         public MeController()
